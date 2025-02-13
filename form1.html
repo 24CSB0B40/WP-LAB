@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       .button {
+    background-color: rgb(44, 179, 123);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 8px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .submit{
+    background-color: aqua;
+  }
+  .submit:hover {
+    background-color: royalblue;
+  }
+  .movingtext{
+    color :red; font-size:20px
+  }
+    </style>
+<body style="background-color:Moccasin;">
+<center>
+<title> Registration form</title>
+<div style="border:5px solid black; border-radius:20px;">
+
+<h1><b>REGISTRATION FORM</b></h1>
+<marquee class="movingtext">BOOKINGS ARE OPEN</marquee>
+<form action="">
+First name:<br>
+<input type="text"name="firstname"><br>
+Lastname:<br>
+<input type="text"name="lastname"><br>
+Mobile number:<br>
+<input type="number"name="Mobile number" ><br>
+Mail ID :<br>
+<input type="email"name="Mail ID"><br>
+Select your Gender:<br>
+<input type="radio"id="male" name="gender">
+<label for="male">Male</label>
+<br>
+<input type="radio"id="female" name="gender">
+<label for="female">Female</label>
+<br>
+<input type="radio"id="others" name="gender">
+<label for="Others">Others</label>
+<p>Enter your age</p>
+<input type="radio" id="age1" name="age" value="15">
+<label for="age1">0 to 15</label>
+<br/>
+<input type="radio" id="age2" name="age" value="30">
+<label for="age2">15 to 30</label>
+<br/>
+<input type="radio" id="age3" name="age" value="1000">
+<label for="age3">>30</label>
+<br/>
+<br/>
+Date of birth:<br>
+<input type="date" name="DOB">
+<br/>
+<br/>
+<label for="requests">ADDRESS</label><br/>
+<textarea id="requests" name="requests" rows="8"  placeholder="Enter your address,pincode,country etc"></textarea>
+<br/>
+<p>ROOM TYPE:</p>
+<select name="dropdown">
+<option value="single">SINGLE</option>
+<option value="double">DOUBLE</option>
+<option value="family">FAMILY</option>
+</select><br/>
+<br/>
+No. of days :
+<input type="number" name="Mobile number" ><br>
+<br/>
+<br/><button class="submit"  > SUBMIT </button> <br/>
+<br/><button class="submit"  >RESET</button><br/>
+</form>
+</center>
+</div>
+</body>
+</html>
