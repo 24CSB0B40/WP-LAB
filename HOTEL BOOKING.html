@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #74b9ff, #a29bfe);
+            color: #333;
+        }
+
+        /* Container Styling */
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form Heading */
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #2d3436;
+        }
+
+        /* Form Inputs */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #636e72;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #0984e3;
+        }
+
+        /* Date and Time Inputs */
+        .form-group-inline {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .form-group-inline .form-group {
+            flex: 1;
+        }
+
+        /* Checkbox and Radio */
+        .checkbox-group,
+        .radio-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            background: #6c5ce7;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #341f97;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-group-inline {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Hotel Booking Form</h2>
+        <form>
+            <!-- Personal Details -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Booking Details -->
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="checkIn">Check-In Date</label>
+                    <input type="date" id="checkIn" name="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Check-Out Date</label>
+                    <input type="date" id="checkOut" name="checkOut" required>
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="adults">Number of Adults</label>
+                    <input type="number" id="adults" name="adults" placeholder="0" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">Number of Children</label>
+                    <input type="number" id="children" name="children" placeholder="0" min="0" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="" disabled selected>Select a room type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+
+            <!-- Additional Requests -->
+            <div class="form-group">
+                <label for="requests">Additional Requests</label>
+                <textarea id="requests" name="requests" rows="4" placeholder="Enter any additional requests"></textarea>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="form-group">
+                <label>Payment Method</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="paymentMethod" value="creditCard" required> Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="paypal"> PayPal
+                    </label>
+                </div>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

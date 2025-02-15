@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image and Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            padding-top: 180px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width:1000px;
+ 
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        .content {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <img src="https://telanganatourism.gov.in/blog/images/Manjira-Wildlife-Sanctuary_Blog-760X400.jpg" alt="MANJIRA WILDLIFE SANCTURY">
+        <div class="content">
+            <h2> MANJIRA WILDLIFE SANTURY</h2>
+            <p>Manjira wildlife sanctuary is a wildlife sanctuary and reservoir located in the Sangareddy district of Telangana State, India.[2] Originally a crocodile sanctuary developed to protect the vulnerable species mugger crocodile, today it is home to more than 70 species of birds. The reservoir, located in the sanctuary, provides drinking water to Hyderabad and Secundarabad.<br>
+Flora:<br>
+
+This wildlife sanctuary is a freshwater ecosystem. The plant species of Typha, Ipomoea and Acacia cover the periphery of the waterline, while agricultural fields surround the reservoir and the river. Some of the major plant species found are Ipomea, Babool, Prosopis, Vallisneria, Eichhornia, and reeds.<br>
+
+Fauna:<br>
+
+This wildlife sanctuary is a riverine habitat supporting mugger crocodile, fresh water turtles, prawns, molluscs, and fish like catla, rohu, murrel, eel, karugu and chidwa. Among reptiles, monitor lizard, mugger crocodile, turtles and cobra are present. The Indian hare, wild boar, mongoose and jackal are also present</p>
+        </div>
+    </div>
+</body>
+</html>

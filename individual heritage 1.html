@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image and Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            padding-top: 180px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width:1000px;
+ 
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://st1.latestly.com/wp-content/uploads/2024/06/Charminar.jpg" alt="CHARMINOR" alt="Sample Image">
+        <div class="content">
+            <h2>CHARMINOR</h2>
+            <p>The Charminar is a monument and mosque in Hyderabad, India. The structure was built in 1591 AD. It is the most famous building of Hyderabad and also one of the most famous buildings in India.[3] It was built by Muhammad Quli Qutb Shahi to celebrate the end of a deadly plague.[4] The Charminar lies near the bank of the river Musi. It is close to Laad Bazaar and Makkah Masjid.[4] Charminar is taken from two words Char and Minar which translate as Four Towers in Urdu.[4]
+
+                Some people say that Charminar was the first structure to be constructed in the newly built city of Hyderabad.[5] It is said that Quli Qutab Shah prayed for the end of the plague and vowed to build a mosque if it was eradicated.[6] Mir Momin Astarabadi, the prime minister of Qutb Shah played an important role in the design and layout of Charminar and the city of Hyderabad.[7] The structure is of Indo-Islamic architecture with some Persian elements.[8]</p>
+        </div>
+    </div>
+</body>
+</html>

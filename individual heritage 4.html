@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image and Content</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            padding-top: 180px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width:1000px;
+ 
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        .content {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBpf8EnVxDKCm7XLPJyYklcJI_YnY335LLA&s" alt="RAMOJI FILM CITY">
+        <div class="content">
+            <h2>RAMOJI FILM CITY</h2>
+            <p>Ramoji Film City is an integrated film studio facility located in Hyderabad, India. Spread over 2,000 acres (810 ha),[1] it is recognized as the world's largest film studio complex by the Guinness World Records Established in 1996 by Telugu media proprietor Ramoji Rao, it has been described as a "city within a city" by The Guardian.
+
+In addition to serving as a major hub for film production, Ramoji Film City is a popular thematic holiday destination, featuring a mix of natural landscapes, artificial sets, and an amusement park. Around 1.5 million tourists visit the place every year.[5]</p>
+        </div>
+    </div>
+</body>
+</html>

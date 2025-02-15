@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://st1.latestly.com/wp-content/uploads/2024/06/Charminar.jpg" alt="CHARMINOR">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRceTbkk7c2nbx8qysccqbBzs8AmOqCibHMXg&s" alt="RAMAPPA TEMPLE">
+        <img src="https://telanganatourism.gov.in/blog/images/Manjira-Wildlife-Sanctuary_Blog-760X400.jpg" alt="MANJIRA WILDLIFE SANCTURY">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBpf8EnVxDKCm7XLPJyYklcJI_YnY335LLA&s" alt="RAMOJI FILM CITY">
+        <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/11/02184143/Everything-you-need-to-know-about-Golconda-Fort-FB-1200x700-compressed.jpg" alt="golkonda">
+        <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShM8pdATTX-csRzXozS6CoWEPBWInKdM7apMEQdiChclwWwrk3IgMXBWLVOzRrcNrZBN4&usqp=CAU" alt="Image 6">
+    </div>
+</body>
+</html>
