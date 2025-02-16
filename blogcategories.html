@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog Categories</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #9ec6cf, #e6e88c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .categories-container {
+            text-align: center;
+            background: rgb(98, 174, 217);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h2 {
+            color: #000000;
+        }
+        .category-buttons {
+            display: block;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(241, 244, 244);
+        }
+        .category-btn {
+            background: #e16b6b;
+            color: white;
+            margin: 10px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .category-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 5px 15px rgb(160, 144, 119);
+        }
+    </style>
+</head>
+<body>
+    <div class="categories-container">
+        <h2>Categories</h2>
+        <div class="category-buttons">
+            <button class="category-btn"><a href="https://www.nomadicmatt.com/how-to-plan-your-trip/">HOW TO PLAN YOUR TRIPS</a></button>
+            <button class="category-btn"><a href="https://www.nomadicmatt.com/airline-ticket-advice/">FIND CHEAP AIRFARE</a></button>
+            <button class="category-btn"><a href="https://www.nomadicmatt.com/life-on-road/">LIFE ON THE ROAD</a></button>
+            <button class="category-btn"><a href="https://www.nomadicmatt.com/family-and-senior-travel/">FAMILY AND SENIOR TRAVEL</a> </button>
+            <button class="category-btn"><a href="https://www.nomadicmatt.com/find-cheap-places-to-stay/">GET ACCOMMODATION</a></button>
+        </div>
+    </div>
+</body>
+</html>

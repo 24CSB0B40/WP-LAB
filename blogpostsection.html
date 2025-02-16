@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG PAGE</title>
+    <style>
+        body{
+            background-image: url('https://img.freepik.com/free-photo/golden-sunset-tropical-beach-with-palm-trees_9975-32980.jpg?ga=GA1.1.845446521.1739712076&semt=ais_hybrid');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+           margin-left: 30%;
+           margin-top: 4%;
+           margin-bottom: 4%;
+           font-size: 40px;
+        }
+       
+        div.gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        div.gallery:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        div.gallery:hover img {
+            transform: scale(1.1);
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            background-color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-bottom: 4%;
+            width: 22.99999%;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>LATEST BLOG POSTS </h3>
+    </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img src="https://media.nomadicmatt.com/2023/hongkongitinerary.jpg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">Hong Kong Itinerary: What to Do in 4 (or More) Days </div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+                <img src="https://media.nomadicmatt.com/bangkok4top.jpg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">Visiting Bangkok: My Suggested 3-5 Day Itinerary</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+                <img src="https://media.nomadicmatt.com/2023/incatrail1.jpg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">How to Hike the Inca Trail </div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+                <img src="https://media.nomadicmatt.com/2024/qc_hotel.jpeg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">The 5 Best Hotels in Quebec City </div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.nomadicmatt.com/wp-content/uploads/2024/07/cr_roadtrip-1024x600.jpeg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">My 1 Week Costa Rica Road Trip Itinerary </div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+                <img src="https://www.nomadicmatt.com/wp-content/uploads/2024/08/hobbitonmain-1024x599.jpeg" alt="Northern Lights" width="600" height="400">
+              <div class="desc">My Ultimate Road Trip Itinerary for New Zealand’s North Island</div>
+            </div>
+          </div>
+</body>
+</html>
