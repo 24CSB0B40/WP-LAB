@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Features</title>
+  <link rel="stylesheet" href="9.css">
+</head>
+<body class="light-mode">
+<center>
+  <button id="themeToggle" onclick="toggleTheme()">Switch to Dark Mode</button>
+
+  <hr>
+
+  <div id="timer">00:00</div>
+  <input type="number" id="timerInput" placeholder="Enter time in seconds" />
+  <button id="startButton" onclick="startTimer()">Start</button>
+  <div class="timer-btns">
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <hr>
+
+  <button onclick="changeStyle()">Change Element Style</button><br><br>
+  <div id="styledElement" style="width: 100px; height: 100px; background-color: blue;"></div>
+
+  <hr>
+
+  <ul id="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Banana</li>
+  </ul>
+  <button onclick="sortList()">Sort Alphabetically</button>
+  <button onclick="filterDuplicates()">Remove Duplicates</button>
+  <button onclick="reverseList()">Reverse Order</button>
+
+  <hr>
+  <h3>Dynamic Table</h3>
+  <input type="text" id="rowInput" placeholder="Enter data for new row" />
+  <button onclick="addRow()">Add Row</button>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <hr>
+
+  <div class="gallery">
+    <img class="thumbnail" src="https://c4.wallpaperflare.com/wallpaper/121/626/428/yamaha-fz-10-sportbike-best-bikes-wallpaper-preview.jpg" alt="Image 1" onclick="showLargerImage(this)" />
+    <img class="thumbnail" src="https://img1.wallspic.com/previews/1/3/6/4/7/174631/174631-motorcycle-ktm-ktm_duke_200_2020-ktm_rc_390-bike-x750.jpg" alt="Image 2" onclick="showLargerImage(this)" />
+    <img class="thumbnail" src="https://img3.wallspic.com/previews/3/9/6/5/5/155693/155693-aprilia_rs_660-motorcycle-aprilia-sport_bike-aprilia_rs125-500x.jpg" alt="Image 3" onclick="showLargerImage(this)" />
+    <img class="thumbnail" src="https://img3.wallspic.com/previews/5/9/6/5/5/155695/155695-cruiser-chopper-motorcycle-motorcycling-cars-500x.jpg" alt="Image 4" onclick="showLargerImage(this)" />
+    <img class="thumbnail" src="https://img1.wallspic.com/previews/8/9/6/5/5/155698/155698-motorcycle-suzuki-suzuki_gsx_r-motorcycle_fairing-gsx_r750-500x.jpg" alt="Image 5" onclick="showLargerImage(this)" />
+    <img class="thumbnail" src="https://img2.wallspic.com/previews/9/8/0/7/6/167089/167089-motorcycle-cruiser-kawasaki_estrella-tire-wheel-500x.jpg" alt="Image 6" onclick="showLargerImage(this)" />
+  </div>
+  <img id="larger-image" src="" alt="click on any above image" />
+</center>
+  <script src="9.js"></script>
+
+</body>
+</html>
